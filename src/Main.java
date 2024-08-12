@@ -6,7 +6,7 @@ public class Main {
         for (int i = 1; i <= 10; i++) {
             System.out.println(i); }
 //        System.out.printf("Задача 2");
-        for (int i = 10; i >= 0; i--) {
+        for (int i = 10; i > 0; i--) {
             System.out.println(i); }
         System.out.println("Задача 3");
         for (int i = 0; i <=17 ; i+=2) {
@@ -18,7 +18,7 @@ public class Main {
         }
         System.out.println("Задача 5");
         for (int i = 1906; i <=2096 ; i+=4) {
-            System.out.println(i+" високосный год ");
+            System.out.println(i+" год является високосным ");
         }
         System.out.println("Задача 6");
         for (int i = 7; i <= 98; i+=7) {
@@ -37,11 +37,13 @@ public class Main {
         }
         System.out.println("Задача 9");
         int salery = 29000;
+        int percent = 0;
         int sum1 = 0;
         for (int i = 1; i <=12; i++) {
-            sum1 = sum1 + sum1/100;
             sum1 = sum1 + salery;
-            System.out.println("Месяц " + i+ " сумма накоплений равна " + sum1 + " процент " + sum1/100);
+            percent = sum1/100;
+            sum1 = sum1 + percent;
+            System.out.println("Месяц " + i+ " сумма накоплений равна " + sum1 + " процент " + percent);
         }
 
         System.out.println( "Задача 10");
